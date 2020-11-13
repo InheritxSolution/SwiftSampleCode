@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dfn-xH-P5O">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login-->
+        <scene sceneID="f3l-Ek-Z7Q">
+            <objects>
+                <viewController storyboardIdentifier="LoginVC" id="dfn-xH-P5O" customClass="Login" customModule="Code_structure_with_login" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cTN-3E-UNj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jUo-BU-7Yu">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nli-ms-bkn">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="350"/>
+                                        <subviews>
+                                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aVV-lg-UPp">
+                                                <rect key="frame" x="20" y="20" width="374" height="310"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="6vv-u7-O7d">
+                                                        <rect key="frame" x="30" y="30" width="314" height="90"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="-10" translatesAutoresizingMaskIntoConstraints="NO" id="8Me-Th-OQO">
+                                                                <rect key="frame" x="0.0" y="0.0" width="314" height="40"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EeE-dN-XXT">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="40" id="NT3-YJ-fJy"/>
+                                                                            <constraint firstAttribute="width" constant="40" id="v3U-oC-6DE"/>
+                                                                        </constraints>
+                                                                        <color key="tintColor" red="0.1137254902" green="0.69803921570000005" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="5"/>
+                                                                        <state key="normal" image="envelope" catalog="system">
+                                                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                    </button>
+                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="EMAIL ADDRESS" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UkF-T3-vvN" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                                                        <rect key="frame" x="30" y="0.0" width="284" height="40"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="40" id="rdd-7B-mgr"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                        <textInputTraits key="textInputTraits"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
+                                                                                <color key="value" red="0.1137254902" green="0.69803921570000005" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="activeBorderColor">
+                                                                                <color key="value" red="0.1137254902" green="0.69803921570000005" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                                                <color key="value" red="0.1137254902" green="0.69803921570000005" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                                                                <color key="value" red="0.1137254902" green="0.69803921570000005" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="lineErrorColor">
+                                                                                <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="titleErrorColor">
+                                                                                <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
+                                                                                <color key="value" red="0.1137254902" green="0.69803921570000005" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                                                                <color key="value" red="0.1137254902" green="0.69803921570000005" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
+                                                                                <color key="value" red="0.1137254902" green="0.69803921570000005" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="textErrorColor">
+                                                                                <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="errorColor">
+                                                                                <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </textField>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="-10" translatesAutoresizingMaskIntoConstraints="NO" id="dN6-Ek-uzn">
+                                                                <rect key="frame" x="0.0" y="50" width="314" height="40"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iBN-od-QZB">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="40" id="aj5-Kk-rRo"/>
+                                                                            <constraint firstAttribute="width" constant="40" id="nJG-tu-mHX"/>
+                                                                        </constraints>
+                                                                        <color key="tintColor" red="0.1137254902" green="0.69803921570000005" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="5"/>
+                                                                        <state key="normal" image="lock" catalog="system"/>
+                                                                    </button>
+                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="PASSWORD" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qlV-qs-UYV" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                                                        <rect key="frame" x="30" y="0.0" width="284" height="40"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="40" id="vzB-Tp-oYL"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
+                                                                                <color key="value" red="0.1137254902" green="0.69803921570000005" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                                                <color key="value" red="0.1137254902" green="0.69803921570000005" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                                                                <color key="value" red="0.1137254902" green="0.69803921570000005" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                                                                <color key="value" red="0.1137254902" green="0.69803921570000005" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="lineErrorColor">
+                                                                                <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
+                                                                                <color key="value" red="0.1137254902" green="0.69803921570000005" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
+                                                                                <color key="value" red="0.1137254902" green="0.69803921570000005" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="rightExtend">
+                                                                                <real key="value" value="30"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </textField>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sgh-6G-bLZ">
+                                                        <rect key="frame" x="130" y="265" width="114" height="15"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="15" id="gm8-jd-KRx"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Create Account?">
+                                                            <color key="titleColor" red="0.1137254902" green="0.69803921570000005" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rNI-ch-ik4">
+                                                        <rect key="frame" x="125.5" y="150" width="123" height="15"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="15" id="AfS-ix-JPq"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Forgot Password?">
+                                                            <color key="titleColor" red="0.1137254902" green="0.69803921570000005" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dco-8d-6K3" customClass="MainActionButton" customModule="Code_structure_with_login" customModuleProvider="target">
+                                                        <rect key="frame" x="49.5" y="195" width="275" height="40"/>
+                                                        <color key="backgroundColor" red="0.1137254902" green="0.69803921570000005" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="275" id="LDQ-Nq-QIo"/>
+                                                            <constraint firstAttribute="height" constant="40" id="vb4-K5-Lz3"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <state key="normal" title="Login">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusV">
+                                                                <real key="value" value="20"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="btnLoginTapped:" destination="dfn-xH-P5O" eventType="touchUpInside" id="oVg-kG-u02"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="sgh-6G-bLZ" firstAttribute="top" secondItem="dco-8d-6K3" secondAttribute="bottom" constant="30" id="3Hp-LM-k1g"/>
+                                                    <constraint firstItem="dco-8d-6K3" firstAttribute="top" secondItem="rNI-ch-ik4" secondAttribute="bottom" constant="30" id="FUb-TH-pZu"/>
+                                                    <constraint firstItem="6vv-u7-O7d" firstAttribute="top" secondItem="aVV-lg-UPp" secondAttribute="top" constant="30" id="Huk-xd-fFT"/>
+                                                    <constraint firstAttribute="bottom" secondItem="sgh-6G-bLZ" secondAttribute="bottom" constant="30" id="LCB-9U-QBd"/>
+                                                    <constraint firstAttribute="trailing" secondItem="6vv-u7-O7d" secondAttribute="trailing" constant="30" id="S2a-W9-z5L"/>
+                                                    <constraint firstItem="rNI-ch-ik4" firstAttribute="centerX" secondItem="aVV-lg-UPp" secondAttribute="centerX" id="UAy-8C-ixJ"/>
+                                                    <constraint firstItem="dco-8d-6K3" firstAttribute="centerX" secondItem="aVV-lg-UPp" secondAttribute="centerX" id="Vz2-e5-esO"/>
+                                                    <constraint firstItem="6vv-u7-O7d" firstAttribute="leading" secondItem="aVV-lg-UPp" secondAttribute="leading" constant="30" id="dpZ-N8-V9h"/>
+                                                    <constraint firstItem="rNI-ch-ik4" firstAttribute="top" secondItem="6vv-u7-O7d" secondAttribute="bottom" constant="30" id="nLA-0z-edx"/>
+                                                    <constraint firstItem="sgh-6G-bLZ" firstAttribute="centerX" secondItem="aVV-lg-UPp" secondAttribute="centerX" id="prR-Yp-BZE"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusV">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="aVV-lg-UPp" firstAttribute="top" secondItem="Nli-ms-bkn" secondAttribute="top" constant="20" id="83f-Tq-iDN"/>
+                                            <constraint firstAttribute="bottom" secondItem="aVV-lg-UPp" secondAttribute="bottom" constant="20" id="MNN-To-ixe"/>
+                                            <constraint firstItem="aVV-lg-UPp" firstAttribute="leading" secondItem="Nli-ms-bkn" secondAttribute="leading" constant="20" id="beX-ZV-uv5"/>
+                                            <constraint firstAttribute="trailing" secondItem="aVV-lg-UPp" secondAttribute="trailing" constant="20" id="jgn-1W-Jky"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Nli-ms-bkn" firstAttribute="top" secondItem="jUo-BU-7Yu" secondAttribute="top" id="5qF-Qg-56P"/>
+                                    <constraint firstAttribute="trailing" secondItem="Nli-ms-bkn" secondAttribute="trailing" id="683-FB-8cF"/>
+                                    <constraint firstItem="Nli-ms-bkn" firstAttribute="leading" secondItem="jUo-BU-7Yu" secondAttribute="leading" id="IBb-t6-vzj"/>
+                                    <constraint firstAttribute="bottom" secondItem="Nli-ms-bkn" secondAttribute="bottom" id="k69-yA-xwP"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="r6e-Qr-1PP"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="amm-TH-Lxv"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.094117647060000004" green="0.61568627450000002" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="weD-OI-VaS" firstAttribute="trailing" secondItem="jUo-BU-7Yu" secondAttribute="trailing" id="BMG-sf-Edv"/>
+                            <constraint firstItem="jUo-BU-7Yu" firstAttribute="top" secondItem="weD-OI-VaS" secondAttribute="top" id="QSZ-dk-Yxa"/>
+                            <constraint firstItem="weD-OI-VaS" firstAttribute="bottom" secondItem="jUo-BU-7Yu" secondAttribute="bottom" id="Z8i-wY-dQV"/>
+                            <constraint firstItem="Nli-ms-bkn" firstAttribute="height" secondItem="weD-OI-VaS" secondAttribute="height" priority="750" id="ZcP-rO-28T"/>
+                            <constraint firstItem="jUo-BU-7Yu" firstAttribute="height" secondItem="weD-OI-VaS" secondAttribute="height" id="ilc-H7-LjY"/>
+                            <constraint firstItem="jUo-BU-7Yu" firstAttribute="leading" secondItem="weD-OI-VaS" secondAttribute="leading" id="ksf-MO-EOb"/>
+                            <constraint firstItem="jUo-BU-7Yu" firstAttribute="width" secondItem="cTN-3E-UNj" secondAttribute="width" id="nUp-BO-nsD"/>
+                            <constraint firstItem="Nli-ms-bkn" firstAttribute="width" secondItem="weD-OI-VaS" secondAttribute="width" id="z3r-r5-4D8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="weD-OI-VaS"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Login" largeTitleDisplayMode="always" id="chR-fn-hev">
+                        <barButtonItem key="backBarButtonItem" title="Login" id="cLu-rh-GsD"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="formView" destination="aVV-lg-UPp" id="g0w-ec-H7Q"/>
+                        <outlet property="svMain" destination="jUo-BU-7Yu" id="ZFK-Ux-zb8"/>
+                        <outlet property="txtEmail" destination="UkF-T3-vvN" id="g5t-GJ-anO"/>
+                        <outlet property="txtPassword" destination="qlV-qs-UYV" id="MWe-3Q-ncB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="68r-pQ-59r" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1983.2" y="107.49625187406298"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="envelope" catalog="system" width="128" height="93"/>
+        <image name="lock" catalog="system" width="128" height="128"/>
+    </resources>
+</document>
