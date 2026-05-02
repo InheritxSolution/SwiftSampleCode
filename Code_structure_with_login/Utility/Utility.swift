@@ -33,16 +33,12 @@ class Utility : NSObject{
     }
     
     
-    class var userToken: String{
+    class var userToken: String {
         get {
-            if let mytoken = defaults.object(forKey: UserDefaultsKey.USER_TOKEN){
-                return mytoken as? String ?? ""
-            }else{
-                return ""
-            }
+            return KeychainManager.shared.get(for: UserDefaultsKey.USER_TOKEN) ?? ""
         }
         set {
-            defaults.set(newValue, forKey: UserDefaultsKey.USER_TOKEN)
+            KeychainManager.shared.save(newValue, for: UserDefaultsKey.USER_TOKEN)
         }
     }
 
